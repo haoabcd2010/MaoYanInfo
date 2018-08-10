@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="movies" extends="struts-default">
+	   <action name="showAll" class="com.happycode.controller.MoviesAction" 
+	         method="showAll">
+	         <result name="success">/index.jsp</result>
+	   </action>
+	   
+	   <action name="showAllByPage" class="com.happycode.controller.MoviesAction" 
+	         method="showAllByPage">
+	         <result name="success">/index.jsp</result>
+	   </action>
+	   
+	   <action name="showAllByCondition" class="com.happycode.controller.MoviesAction" 
+	         method="showAllByCondition">
+	         <result name="success">/search.jsp</result>
+	   </action>
+	   
+	   <action name="showTopMoviesToday" class="com.happycode.controller.MoviesAction" 
+	         method="showTopMoviesToday">
+	         <result name="success">/index.jsp</result>
+	   </action>
+	   
+	   <action name="showMoviesByManyCondition" class="com.happycode.controller.MoviesAction" 
+	         method="showMoviesByManyCondition">
+	         <result name="success">/search.jsp</result>
+	   </action>
+	</package>
+</struts>
